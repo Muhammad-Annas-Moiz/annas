@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="IMAGES/wolf-pack-battalion.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEEDBACK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body {
+        margin: 0%;
+        background-color: rgb(4, 63, 97);
+    }
+
+    .nav-bar {
+        background-color: black;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        padding: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+
+    .nav-bar ul {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-bar ul li {
+        margin: 20px;
+        list-style: none;
+    }
+
+    .nav-bar ul li a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    .nav-bar ul li a:hover {
+        background-color: lightblue;
+        color: black;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px white;
+        padding: 5px;
+    }
+
+    header {
+        background-color:lightblue;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 20px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    .logo img {
+        height: 150px;
+        width: 150px;
+        border-radius: 10px;
+
+    }
+
+    nav {
+        background-color: black;
+        text-align: left;
+        justify-content: left;
+        align-items: left;
+        height: 120px;
+        padding: 0px;
+        padding-top: 0px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 0%;
+    }
+
+    nav ul {
+        text-align: left;
+        justify-content: left;
+        align-items: left;
+    }
+
+    nav ul li {
+        margin: 10px;
+        list-style: none;
+        color: aliceblue;
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        height: 700px;
+        width: 700px;
+        float: left;
+
+    }
+
+    .contact-form {
+
+        padding: 50px;
+        border-radius: 8px;
+        max-width: 500px;
+        width: 50%;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .contact-form h2 {
+        margin-bottom: 20px;
+    }
+
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form label {
+        margin-bottom: 8px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+
+    .contact-form textarea {
+        height: 200px;
+    }
+
+    .contact-form button {
+        background-color: lemonchiffon;
+        text-decoration: black;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 375px;
+        font-weight: bolder;
+    }
+
+    .contact-form button:hover {
+        background-color: rgb(4, 63, 97);
+        color: white;
+    }
+
+    .navbar-brand .navbar-text {
+        font-weight: 800;
+        font-size: 80px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: rgb(0, 0, 0);
+    }
+
+    
+    .contactwhatsapp {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        display: grid;
+        float: right;
+        margin-top: 55px;
+        margin-right: 65px;
+        text-align: center;
+        align-items: center;
+    }
+
+    img {
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    footer {
+        display: block;
+        margin-top: 700px;
+    }
+
+    .imageWA {
+        padding: 50px;
+        border-radius: 8px;
+        max-width: 500px;
+        width: 50%;
+        padding-right: 60%;
+        text-align: center;
+        ;
+    }
+    #maps{
+        width: 650px;
+        height: 120px;
+        float: right;
+        display: flex;
+        
+    }
+    i{
+        list-style: none;
+        color: white;
+    }
+</style>
+
+<body>
+    <nav class="nav-bar">
+        <div class="logo"><a href="HOMEPAGE.html" target="_blank"><img src="IMAGES/2.jpg" alt=""></a></div>
+        <ul>
+          <li><i class="fa-solid fa-house"></i><br><a href="HOMEPAGE.html" target="_blank"><b style="font-size: larger">HOMEPAGE</b></a></li>
+            <li><i class="fa-solid fa-address-card"></i><br><a href="ABOUTPAGE.html" target="_blank"><b style="font-size: larger">ABOUT US</b></a></li>
+            <li><i class="fa-solid fa-list"></i><br><a href="CARD-CATEGORY.html" target="_blank"><b style="font-size: larger">CARD CATEGORIES</b></a></li>
+            <li><i class="fa-solid fa-comment"></i><br><a href="FEEDBACK.html" target="_blank"><b style="font-size: larger">FEEDBACK / CUSTOMER SUPPORT</b></a></li>
+         </ul>
+    </nav>
+    <header>
+        <h1>We value your feedback immensely!</h1>
+    </header>
+    <div class="main">
+        <div class="contact-container">
+            <div class="contact-form">
+
+                <h1 style="color: white; font-family: 'Times New Roman', Times, serif;">FEEDBACK FORM</h1>
+                <form action="#" method="POST">
+                    <label for="name" style="color: white; font-family: 'Times New Roman', Times, serif;"> Full
+                        Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email"
+                        style="color: white; font-family: 'Times New Roman', Times, serif; ">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message"
+                        style="color: white; font-family: 'Times New Roman', Times, serif;">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit" style=" font-family:'Times New Roman', Times, serif;">SUBMIT</button>
+                </form>
+                <A href="newcom.html"><H3 style="color: white;">CLICK HERE TO SEE CLIENT FEEDBACK</H3></A>
+            </div>
+        </div>
+        <div class="contactwhatsapp">
+            <h1 style="color: white;">SCAN FOR WHATSAPP<br>CUSTOMER SERVICE</h1>
+            <div class="imageWA">
+                <img src="IMAGES/shared_qr_code.png" alt="">
+
+                <h3 style="color: white;"><i style="color: white;"class="fa-solid fa-phone"></i> CALL: <br>090078601</h3>
+                <h3 style="color: white;"><i style="color: white;"class="fa-solid fa-at"></i> EMAIL: redcardsltd@gmail.com</h3>
+                <a href="https://www.facebook.com/"><i style="color: white;"
+                    class="fa-brands fa-facebook"></i></a> &nbsp; <a href="https://www.instagram.com/"><i style="color: white;" class="fa-brands fa-instagram"></i></a> &nbsp; <a href="https://twitter.com/?lang=en"><i style="color: white;"
+                    class="fa-brands fa-twitter"></i></a> &nbsp; <a href="https://www.snapchat.com/"><i style="color: white;"
+                    class="fa-brands fa-snapchat"></i></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57889.36587509658!2d66.96795262167967!3d24.929161600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f9b50fe3a59%3A0x226e57047e6d6bc3!2sHydri%20Super%20Market!5e0!3m2!1sen!2s!4v1720956576825!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" id="maps"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <ul>
+                <br>
+                <li>Contact us at redcardsltd@gmail.com<br>or call at 090078601
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/"><i
+                        class="fa-brands fa-facebook"></i></a> &nbsp; <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> &nbsp; <a href="https://twitter.com/?lang=en"><i
+                        class="fa-brands fa-twitter"></i></a> &nbsp; <a href="https://www.snapchat.com/"><i
+                        class="fa-brands fa-snapchat"></i></a><br>Address:SHOP#69,Hydri bazaar,5 star chowrangi,<br>North
+                    nazimabaad, Karachi, Pakistan</li>
+
+            </ul>
+            
+        </nav>
+    </footer>
+</body>
+
+</html>

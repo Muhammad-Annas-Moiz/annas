@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="IMAGES/wolf-pack-battalion.svg">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>ABOUT PAGE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body {
+        margin: 0%;
+        background-color: rgb(4, 63, 97);
+
+    }
+
+    .nav-bar {
+        background-color: black;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        padding: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        border-radius: 0%;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+       
+    }
+
+    .nav-bar ul {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-bar ul li {
+        margin: 20px;
+        list-style: none;
+    }
+
+    .nav-bar ul li a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    .nav-bar ul li a:hover {
+        background-color: lightblue;
+        color: black;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px white;
+        padding: 5px;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    header {
+        background-color: lightblue;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 20px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    .container {
+        width: 500px;
+        height: 250px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+        color: black;
+        overflow: scroll;
+        padding: 20px;
+        margin-top: 50px;
+        margin-left: 400px;
+        border-radius: 10PX;
+    }
+
+    .container::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    .container::-webkit-scrollbar-thumb {
+        background: black;
+    }
+
+    nav {
+        background-color: black;
+        text-align: left;
+        justify-content: left;
+        align-items: left;
+        height: 120px;
+        padding: 0px;
+        padding-top: 0px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 0%;
+        
+    }
+
+    nav ul {
+        text-align: left;
+        justify-content: left;
+        align-items: left;
+    }
+
+    nav ul li {
+        margin: 10px;
+        list-style: none;
+        color: aliceblue;
+    }
+
+    .logo img {
+        height: 150px;
+        width: 150px;
+        border-radius: 10px;
+
+    }
+
+    #maps {
+        width: 650px;
+        height: 120px;
+        float: right;
+        display: flex;
+    }
+    i{
+        list-style: none;
+        color: white;
+    }
+    .teams{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .contain_img{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: url(IMAGES/IMG_3435.jpg);
+        background-size: cover;
+        transition: ease-in-out 0.3s;
+        z-index: 2;
+        margin-top: 10px;
+        margin: 30px;
+    }
+    .contain_img:nth-child(2){
+        background: url(IMAGES/osama.jpg);
+        background-size: cover;
+        position: relative;
+        background-position: center;
+    }
+    .contain_img:nth-child(3){
+        background: url(IMAGES/sameerjpeg.jpg);
+        background-size: cover;
+        position: relative;
+        background-position: center;
+        
+    }
+    .contain_img:nth-child(4){
+        background: url(IMAGES/mustafa.jpg);
+        background-size: cover;
+        position: relative;
+        background-position: center;
+        
+    }
+    .contain_img:nth-child(5){
+        background: url(IMAGES/rehman.jpg);
+        background-size: cover;
+        position: relative;
+        background-position: center;
+        
+    }
+    .contain_img:before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background: inherit;
+        background-position: bottom;
+        transform: scaleX(0.4);
+        transition: 0.4s ease-in-out;
+        border-radius: 120px;
+        transform-origin: right;
+        opacity: 0;
+        z-index: -1;
+    }
+    .contain_img .container_info{
+        position: relative;
+        line-height: 1.8;
+        transition: 0.3s ease-in-out;
+        opacity: 0;
+
+    }
+    .contain_img .container_location{
+        transition-delay: 0.15s;
+    }
+    .contain_img:hover{
+        border-radius: 0;
+        width:200px ;
+        height: 200px;
+    }
+    .h3{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        color: white;
+        margin: 10PX;
+    }
+    .HEADING{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: black;
+    }
+   .subheading{
+    margin-top: 60px;
+    background-color: lightblue;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 10px;
+        border-radius: 50px;
+   }
+   .team_name{
+    background-color:rgb(4, 63, 97); 
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   }
+   .team_name ul {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px;
+        list-style: none;
+        color: aliceblue;
+    }
+</style>
+
+<body>
+    <nav class="nav-bar">
+        <div class="logo"><a href="HOMEPAGE.html" target="_blank"><img src="IMAGES/2.jpg" alt=""></a></div>
+        <ul>
+          <li><i class="fa-solid fa-house"></i><br><a href="HOMEPAGE.html" target="_blank"><b style="font-size: larger">HOMEPAGE</b></a></li>
+            <li><i class="fa-solid fa-address-card"></i><br><a href="ABOUTPAGE.html" target="_blank"><b style="font-size: larger">ABOUT US</b></a></li>
+            <li><i class="fa-solid fa-list"></i><br><a href="CARD-CATEGORY.html" target="_blank"><b style="font-size: larger">CARD CATEGORIES</b></a></li>
+            <li><i class="fa-solid fa-comment"></i><br><a href="FEEDBACK.html" target="_blank"><b style="font-size: larger">FEEDBACK / CUSTOMER SUPPORT</b></a></li>
+         </ul>
+    </nav>
+    <header>
+        <h1>ABOUT US.</h1>
+    </header>
+    <div class="container">
+        <div>
+            <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <h1>Welcome to Red Cards Limited,</h1><br> your premier destination for a diverse and delightful collection
+            of greeting cards online. Founded with a passion for spreading joy and celebrating life’s special moments,
+            Red Cards Limited offers a wide array of cards designed to touch hearts and bring smiles.
+
+            <br>Our Mission:-<br>
+
+            At Red Cards Limited, our mission is simple yet profound: to connect people through thoughtful messages and
+            beautifully crafted cards. We believe that every occasion deserves to be celebrated with sincerity and
+            style, and our collection reflects this belief with creativity and care.
+
+            <br>What We Offer:-<br>
+
+            Explore our extensive selection of cards for every occasion imaginable. Whether it’s birthdays, weddings,
+            holidays, or everyday sentiments, we have a card that perfectly captures the essence of your message. Our
+            cards range from whimsical and humorous to elegant and heartfelt, ensuring there’s something to suit every
+            taste and preference.
+
+            Quality and Craftsmanship
+
+            We take pride in the quality of our products. Each card is meticulously crafted using premium materials and
+            attention to detail, ensuring a product that not only looks beautiful but also feels special to both the
+            sender and the recipient.
+
+            <br>Why Choose Us?:-<br>
+
+            Diverse Collection: From traditional designs to contemporary trends, our collection is curated to cater to
+            diverse tastes.
+            Easy Online Shopping: Enjoy a seamless shopping experience on our user-friendly website, where you can
+            browse, select, and personalize cards with ease.
+            Customer Satisfaction: We prioritize customer satisfaction and strive to exceed expectations with every
+            order.
+            Customization Options: Personalize your cards with custom messages or special touches to make each card
+            uniquely yours.
+            Get in Touch
+
+            Thank you for visiting Red Cards Limited. We invite you to explore our collection and find the perfect card
+            for your next special occasion. For inquiries, customization requests, or assistance, please don’t hesitate
+            to contact our friendly customer service team.
+
+            Celebrate life’s moments with Red Cards Limited—where every card tells a story.</p>
+        </div>
+    </div>
+    <DIV class="subheading">
+    <h1 class="HEADING">OUR TEAM</h1></DIV>
+    <div class="containerr">
+        <div class="teams">
+                <div class="contain_img">
+                    
+                </div>
+                
+            <div class="contain_img">
+            
+            </div>
+            <div class="contain_img">
+                
+            </div>
+            <div class="contain_img">
+                
+            </div>
+            <div class="contain_img">
+                
+            </div>
+        </div>
+        <nav class="team_name">
+            <ul>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li> Muhammad<BR>Annas moiz<br>1560802</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li>Muhammad<br>Osama bhati<br>1558746</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li>Sameer<br>khalid<br>1560801</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li>Mustafa<br>Abbas<br>1596030</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li>Muhammad<br> rehman<br>1560991</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </ul>
+        </nav>
+    
+    <footer>
+        <nav>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57889.36587509658!2d66.96795262167967!3d24.929161600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f9b50fe3a59%3A0x226e57047e6d6bc3!2sHydri%20Super%20Market!5e0!3m2!1sen!2s!4v1720956576825!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" id="maps"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <ul>
+                <br>
+                <li>Contact us at redcardsltd@gmail.com<br>or call at 090078601
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/"><i
+                        class="fa-brands fa-facebook"></i></a> &nbsp; <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> &nbsp; <a href="https://twitter.com/?lang=en"><i
+                        class="fa-brands fa-twitter"></i></a> &nbsp; <a href="https://www.snapchat.com/"><i
+                        class="fa-brands fa-snapchat"></i></a><br>Address:SHOP#69,Hydri bazaar,5 star chowrangi,<br>North
+                    nazimabaad, Karachi, Pakistan</li>
+
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
